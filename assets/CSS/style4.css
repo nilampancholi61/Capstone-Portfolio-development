@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightsteelblue;
+    color: #333;
+}
+
+@keyframes glitter {
+    0% { color: #ff69b4; }
+    25% { color: #ffd700; }
+    50% { color: #00ffff; }
+    75% { color: #ff6347; }
+    100% { color: #ff69b4; }
+}
+
+.glitter-name {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    animation: glitter 2s infinite;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    transform: scale(1.1);
+    text-shadow: 0px 0px 8px #ffd700;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
